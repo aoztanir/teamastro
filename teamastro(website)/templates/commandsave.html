@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Astro🚀</title>
+	<link rel="icon" type="image/x-icon" href="/static/img/logos/favicon.ico" />
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous">
+	</script>
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"
+	/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="/static/css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+
+			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/static/img/logos/astro.png" alt="" />  &ensp;|   &nbsp;TEAM ASTRO</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">more<i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">How Can You Use Astro?</a></li>
+
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">What Can Astro Do?</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team Astro</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/commands">Commands</a></li>
+                        <!-- dhruv u add a route by doing it in main.py ill hsow u -->
+                        
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+          <div class="grid-container">
+            <div class="item1">
+          <div id="text1">
+            <div id="left"><p>Catagories</p>
+          </div>
+            <div id="right"><p>Commands</p>
+          </div>
+          </div>
+          </div>
+        
+          <section class="buttonstack">
+        
+
+            
+            
+              
+          <div class="item2">
+              
+            
+            <a class="js-scroll-trigger" href="#commands" ><button class="button button2 js-scroll-trigger", onclick="myFunction()">Music</button></button></a>
+            <br>
+            <a class="js-scroll-trigger" href="#commands"><button class="button button2 js-scroll-trigger">Moderation</button></a>
+            <br>
+            <a class="js-scroll-trigger" href="#commands"><button class="button button2 js-scroll-trigger">Games</button></a>
+            <br>
+            <a class="js-scroll-trigger" href="#commands"><button class="button button2 js-scroll-trigger">Productivity</button></a>
+            <br>
+            <a class="js-scroll-trigger" href="#commands"><button class="button button2 js-scroll-trigger">Live Data</button></a>
+            <br>
+            <a class="js-scroll-trigger" href="#commands"><button class="button button2 js-scroll-trigger"> Fun</button></a>
+            <div id="myDIV">Hello</div>
+
+          </div>
+          </div>
+
+            
+            
+          </section> 
+
+        </header> 
+
+            
+            
+            <style>
+.button {
+  background-color: #FBC35E; /* Green */
+  border: none;
+  font-family : inherit;
+  border-radius: 10px;
+  color: white;
+  padding: 9px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  /*display: block;*/
+   width: 200px;
+   height: 35px;
+  margin-right: 850px; 
+  
+}
+
+br {
+  content: "";
+  margin: 3em;
+  display: block;
+  font-size: 24%;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
+}
+ 
+.buttonstack:not(:last-child) {
+  border-bottom: none;
+}
+#text1 {
+width:100%;
+    float:left;
+font-family : inherit;
+font-size: 24px;
+}
+#left{
+width:34%;
+    float:left;
+font-family : inherit;
+font-size: 24px;
+}
+#right {
+width:60%;
+    float:left;
+font-family : inherit;
+font-size: 24px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+        </header>
+        <section id="commands">
+          <header id="Cat&Com">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Productivity</h2>
+                                    <br>
+                                     <div class="commandlist justify-content-center">
+            <ul class="music">
+                <li class='play'><p1>Play</p1></li>
+                <li class='pause'><p1>Pause</p1></li>
+                <li class='playurl'><p1>Play URL</p1></li>
+                <li class='resume'><p1>Resume</p1></li>
+                <li class='skip'><p1>Skip</p1></li>
+                <li class='lyrics'><p1>Lyrics</p1></li>
+                <li class='queue'><p1>Queue</p1></li>
+                <li class='listqueue'><p1>List Queue</p1></li>
+                <li class='remove'><p1>Remove</p1></li>
+                <li class='clearqueue'><p1>Clear Queue</p1></li>
+            </ul>
+            <ul class="moderation">
+                <li class='kick'><p1>Kick</p1></li>
+                <li class='ban'><p1>Ban</p1></li>
+                <li class='invite'><p1>Invite</p1></li>
+                <li class='automoderationfeatures'><p1>Auto Moderation Features</p1></li>
+                <li class='mute'><p1>Mute</p1></li>
+                <li class='unmute'><p1>Unmute</p1></li>
+                <li class='muted'><p1>Muted</p1></li>
+            </ul>
+            <ul class="games">
+                <li class='eightball'><p1>8-ball</p1></li>
+                <li class='tictactoe'><p1>Tic-Tac-Toe</p1></li>
+                <li class='rps'><p1>Rock Paper Scissors(playrps)</p1></li>
+                <li class='dungeoncrawler'><p1>Dungeon Crawler</p1></li>
+            </ul>
+            <ul class="work">
+                <li class='Reminder'><p1>Reminder</p1></li>
+                <li class='Timer'><p1>Timer</p1></li>
+                <li class='Polltimes'><p1>Polltimes</p1></li>
+                <li class='Poll'><p1>Poll</p1></li>
+                <li class='Searchyt'><p1>Search Youtube</p1></li>
+                <li class='Youtube'><p1>Youtube</p1></li>
+                <li class='muGoogleted'><p1>Google</p1></li>
+                <li class='Googlelinks'><p1>Googlelinks</p1></li>
+                <li class='Wiki'><p1>Wiki</p1></li>
+                <li class='Agenda'><p1>Agenda</p1></li>
+                <li class='Meeting'><p1>Meeting</p1></li>
+                <li class='Tasks'><p1>Tasks</p1></li>
+                <li class='Listtasks'><p1>Listtasks</p1></li>
+                <li class='Cleartasks'><p1>Cleartasks</p1></li>
+                <li class='Teamtask'><p1>Teamtask</p1></li>
+                <li class='Listteamtasks'><p1>Listteamtasks</p1></li>
+                <li class='Deletetask'><p1>Deletetask</p1></li>
+          
+        </div>
+
+          
+          
+        </section>
+
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">TEAM ASTRO</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="/static/img/logos/astro.png" alt="" />
+                            <h4>Astro</h4>
+                            <p class="text-muted">Astro, Himself</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="/static/img/logos/aryahpfp.png" alt="" />
+                            <h4>Aryah Oztanir</h4>
+                            <p class="text-muted">Team Lead/Lead Programmer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="/static/img/logos/dhruvpfp.png" alt="" />
+                            <h4>Dhruv Kapur</h4>
+                            <p class="text-muted">UX/Website Lead</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-google"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/dhruv_k671"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div> -->
+                </div>
+            </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+       
+        </section>
+        <!-- Clients-->
+        <!-- <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="/static/img/imgs/envato.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="/static/img/imgs/designmodo.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="/static/img/imgs/themeforest.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="/static/img/imgs/creative-market.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Contact-->
+        <!-- <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section> -->
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © | Team Astro 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="">Aryah Oztanir</a>
+                        <a href="https://youtube.com/driftrs/">Dhruv Kapur</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="/static/js/jqBootstrapValidation.js"></script>
+        <script src="/static/js/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="/static/js/scripts.js"></script>
+    </body>
+</html>
